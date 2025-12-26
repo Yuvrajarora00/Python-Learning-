@@ -19,10 +19,10 @@ import pyttsx3
 
 engine = pyttsx3.init(driverName="espeak")
 
-# ✅ FIRST get the voices list
+# FIRST get the voices list
 voices = engine.getProperty("voices")
 
-# ✅ THEN use it
+# THEN use it
 engine.setProperty("voice", voices[3].id)  # change index if needed
 engine.setProperty("rate", 200)
 engine.setProperty("volume", 2.0)

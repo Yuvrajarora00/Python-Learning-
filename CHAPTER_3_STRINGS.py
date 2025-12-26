@@ -128,3 +128,7 @@ print(av)
 print(at)
 print(au)       
 
+#escape sequences 
+aw = "Hello\tWorld"  #tab space between Hello and World
+ax = "Hello\nWorld"  #new line between Hello and World
+ay = "He said, \"Hello World!\""  #double quotes inside string
