@@ -131,4 +131,9 @@ print(au)
 #escape sequences 
 aw = "Hello\tWorld"  #tab space between Hello and World
 ax = "Hello\nWorld"  #new line between Hello and World
-ay = "He said, \"Hello World!\""  #double quotes inside string
+ay = "He said, \"Hello World!\""  #double quotes inside string same as we write in double comma
+az = 'It\'s a beautiful day'  #single quote inside string same as we write in single comma
+print(aw)
+print(ax)
+print(ay)
+print(az)
