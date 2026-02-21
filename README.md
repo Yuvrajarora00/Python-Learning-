@@ -1,2 +1,19 @@
-# Python-Learning-
-I am yuvraj. here I post my all python learning every day.
+# 🐍 Python Learning Repository
+
+## 📌 About
+This repository contains structured Python practice programs organized chapter-wise.
+
+## 📖 Topics Covered
+- Operators
+- Variables & Data Types
+- Strings
+- Lists
+- Tuples
+- Dictionaries
+- Sets
+- Loops
+- Functions
+- Practice Problems
+
+## 🎯 Goal
+To build strong fundamentals and improve problem-solving skills in Python.
