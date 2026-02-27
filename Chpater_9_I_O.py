@@ -31,7 +31,20 @@
 # d.write("hello world i am yuvi")
 # d.close()
 
-e = open("poem.txt","rb")
-data = e.read()
-print(data)
-e.close()
+
+# with this we csan read and write in the file in binary mode
+
+# e = open("poem.txt","rb")
+# data = e.read()
+# print(data)
+# e.close()
+
+
+# USE OF + MODE WITH ALL
+
+
+# r+  | Read + Write (file must exist) 
+# w+  | Write + Read (deletes old data)
+# a+  | Append + Read
+# rb+ | Read + Write in binary
+
