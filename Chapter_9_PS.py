@@ -34,15 +34,30 @@
     
 # game()
 
+# problem 3
 
-def table(n):
-    table = ""
-    for i in range(1,11):
-        table += f"{n} X {i} = {n*i}\n"
+# def table(n):
+#     table = ""
+#     for i in range(1,11):
+#         table += f"{n} X {i} = {n*i}\n"
         
-    with open(f"tables/table_{n}.txt","w") as f:
-        f.write(table)
+#     with open(f"tables/table_{n}.txt","w") as f:
+#         f.write(table)
 
+ 
+# for i in range(2,21):
+#     table(i)
+    
+    
+# problem 4
 
-for i in range(2,21):
-    table(i)
+word = "donkey"
+
+with open("donkey.txt","r") as f:
+    content = f.read() 
+    
+newcontent = content.replace(word,"#####")
+
+with open("donkey.txt","w") as f:    
+    f.write(newcontent)
+    
