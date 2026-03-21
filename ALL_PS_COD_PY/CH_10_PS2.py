@@ -55,6 +55,4 @@ class Yuvi(Hello, Single):
 
 
 S = Single("yuvraj", 83, "LLR college\n")
-# c1 = Hello()
 P1 = Yuvi("yuvraj", 73, "dm clg")
-# P1.good()
