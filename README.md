@@ -13,6 +13,8 @@ This repository contains structured Python practice programs organized chapter-w
 - Sets
 - Loops
 - Functions
+- OOPS
+- Inheritance
 - Practice Problems
 
 ## 🎯 Goal
