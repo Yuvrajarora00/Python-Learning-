@@ -1,31 +1,24 @@
-# # single inheritance
-# class Single:
-#     def __init__(self, name, age, college):
-#         self.name = name
-#         self.age = age
-#         self.college = college
-#         print(f"hello my name is {self.name} and my age is {self.age}")
-#         print(f"my college is {self.college}")
+# single inheritance
+class Single:
+    def __init__(self, name, age, college):
+        self.name = name
+        self.age = age
+        self.college = college
+        print(f"hello my name is {self.name} and my age is {self.age}")
+        print(f"my college is {self.college}")
 
 
-# class Hello(Single):
-#     def Hi(self, college):
-#         self.college = college
-#         print(f"I am student in {self.college}")
+class Hello(Single):
+    def Hi(self, college):
+        self.college = college
+        print(f"I am student in {self.college}")
 
 
-# print("|----------------------------------------|")
-# print("|         student details 1              |")
-# print("|----------------------------------------|")
+S = Single("yuvraj", 83, "LLR college\n")
+c1 = Hello("yuj", 67, "dm collge\n")
 
-# S = Single("yuvraj", 83, "LLR college\n")
-
-# print("---------------------------------------------------------------------\n")
-# print("|----------------------------------------|")
-# print("|         student details 2              |")
-# print("|----------------------------------------|")
-
-# c1 = Hello("yuj", 67, "dm collge")
+print("-----------------------------------------------------------------------------|")
+print("-----------------------------------------------------------------------------|")
 
 
 # Multiple Inheritance
@@ -57,9 +50,40 @@ class Yuvi(Single, Hello):  # ← Multiple Inheritance
         self.Hi()  # from Hello
 
 
-S = Yuvi("yuvraj", 83, "LLR college")
+S = Yuvi("yuvraj", 83, "LLR college\n")
 print()
-P1 = Yuvi("yuvraj", 73, "dm clg")
+P1 = Yuvi("yuvraj", 73, "dm clg\n")
 S.info()
 print()
 P1.info()
+
+print("-----------------------------------------------------------------------------|")
+print("-----------------------------------------------------------------------------|")
+# multi-level inheritance
+
+
+class one:
+    @staticmethod
+    def hello():
+        print("mu name is ujohnq\n")
+
+
+class two(one):
+    @staticmethod
+    def me():
+        print("my age us 378\n")
+
+
+class three(two):
+    @staticmethod
+    def he():
+        print("my clg is jeoiw\n")
+
+
+c = three()
+c.hello()
+c.he()
+c.me()
+
+print("-----------------------------------------------------------------------------|")
+print("-----------------------------------------------------------------------------|")
