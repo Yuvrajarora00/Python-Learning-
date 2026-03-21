@@ -1,6 +1,4 @@
 # # single inheritance
-
-
 # class Single:
 #     def __init__(self, name, age, college):
 #         self.name = name
@@ -30,29 +28,38 @@
 # c1 = Hello("yuj", 67, "dm collge")
 
 
-# Multi-level Inheritance
+# Multiple Inheritance
 class Single:
-    def __init__(self, name, age, college):
+    def __init__(self, name, age):
         self.name = name
         self.age = age
-        self.college = college
-        print(self.good())
-        print(f"hello my name is {self.name} and my age is {self.age}")
-        print(f"my college is {self.college}")
 
     def good(self):
         return "hello there i am good,"
 
 
 class Hello:
+    def __init__(self, college):
+        self.college = college
+
     def Hi(self):
-        print(self.good())
+        print(f"my college is {self.college}")
 
 
-class Yuvi(Hello, Single):
-    def good(self):
-        return "hello there i am good,"
+class Yuvi(Single, Hello):  # ← Multiple Inheritance
+    def __init__(self, name, age, college):
+        Single.__init__(self, name, age)
+        Hello.__init__(self, college)
+
+    def info(self):
+        print(self.good())  # from Single
+        print(f"hello my name is {self.name} and my age is {self.age}")
+        self.Hi()  # from Hello
 
 
-S = Single("yuvraj", 83, "LLR college\n")
+S = Yuvi("yuvraj", 83, "LLR college")
+print()
 P1 = Yuvi("yuvraj", 73, "dm clg")
+S.info()
+print()
+P1.info()
